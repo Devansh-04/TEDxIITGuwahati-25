@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family:'Nunito';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+::selection {
+  background-color: #ff0000; /* Highlight color */
+  color: #ffffff; /* Text color */
+}
+
+::-moz-selection { 
+  background-color: #ffcc00; /* Highlight color for Firefox */
+  color: #000; /* Text color for Firefox */
+}
+

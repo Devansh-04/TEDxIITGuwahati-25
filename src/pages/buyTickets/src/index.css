@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #dc2626;
+  --primary-dark: #b91c1c;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Ticket styles */
+.ticket-container {
+  @apply relative w-full bg-[#1a1a1a] rounded-lg overflow-hidden;
+}
+
+.ticket-border {
+  @apply p-6 border-4 border-double border-red-500/20 m-3;
+}
+
+.ticket-title {
+  @apply text-2xl font-bold text-white mb-2;
+}
+
+.ticket-subtitle {
+  @apply text-gray-400 text-sm italic;
+}
+
+.ticket-button {
+  @apply px-6 py-2 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg hover:from-red-700 hover:to-red-800 transition-all;
+}

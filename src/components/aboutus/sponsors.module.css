@@ -1,0 +1,47 @@
+.scroll_container {
+    display: flex;
+    overflow: hidden; /* Hide content outside the container */
+    white-space: nowrap;
+    padding: 20px 0;
+    scale: 1.5;
+    margin-inline: 5%;
+    margin: 9%;
+}
+.heading_sponsors {
+    font-size: 150%;
+    font-weight: 500;
+    text-align: center;
+    color: #ff0000;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.scroll_container .scroll_content {
+    display: flex;
+    animation: scroll 25s linear infinite; /* Animation for auto-scroll */
+}
+
+.scroll_container img {
+    width: 110px;
+    height: 110px; /* Adjust image height */
+    margin: 0 15px;
+    border-radius: 50%; 
+    flex-shrink: 0;/* Make the images circular */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll to the left */
+    }
+}
+.sponsor_title {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: #ffffff;
+    margin-top: 5px;
+    text-align: center;
+}

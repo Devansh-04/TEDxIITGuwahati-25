@@ -1,0 +1,84 @@
+.benefits_container {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 0, 0, 0.125);
+  }
+  @media(max-width:480px)
+  {.benefits_container{margin-top:-20%;}}
+  @media(max-width:375px)
+  {.benefits_container{margin-top:-35%;}}
+  
+  .benefits_title {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .section_title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefit_item {
+    display: flex;
+    gap: 0.5rem;
+    color: #fdfeff;
+  }
+  
+  .bullet_point {
+    color: #ef4444;
+    margin-top: 0.25rem;
+  }
+  
+  .extra_benefits {
+    margin-top: 1rem;
+  }
+  
+  .toggle_button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #d71a1a;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-size:1.1em;
+}
+
+.toggle_button:hover {
+    color: #fca5a5;
+}
+  
+  .student_benefits {
+    color: #d1d5db;
+  }
+  
+  .student_heading {
+    font-weight: 500;
+  }
+  
+  .highlight {
+    color: #f87171;
+  }
+  .benefit_item_highlight{
+    color: #ef4444;
+  }

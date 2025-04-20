@@ -1,0 +1,342 @@
+
+.main {
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background-color: black;
+   color: white;
+   font-family: Arial, sans-serif;
+   position: relative; 
+   z-index: 1;
+}
+
+.main::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: auto; 
+   min-height: 100%; 
+   background-image: url('./images/img2.jpg'); 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   z-index: -1; 
+   opacity: 0.4; 
+}
+
+.main {
+    margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   padding: 20px;
+   background-color: black;
+   color: white;
+   font-family: Arial, sans-serif; 
+   /* margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background-image: url('./images/img2.jpg'); /* Use correct relative path */
+   /* background-repeat: no-repeat; */
+   /* background-position: center;
+   background-size: cover;
+   background-attachment: fixed; /* Optional for a parallax effect */
+   /* color: white;
+   font-family: Arial, sans-serif;
+   position: relative; 
+   opacity: 1.5; */
+}
+
+.background_image {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 120%;
+   /* background-image: url('./images/img2.jpg'); Correct path to image */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed; 
+   opacity: 0.4; 
+   z-index: 0; 
+}
+
+.blog_section {
+   max-width: 80%;
+   text-align: center;
+   margin-bottom: 8px;
+   z-index: 2;
+}
+
+.blog_section h1 {
+   color: red;
+   font-size: 2.5rem;
+   margin-bottom: 15px;
+   font-weight: 200;
+}
+
+.blog_section p {
+   line-height: 1.8;
+   font-size: 1.2rem;
+   color: white;
+   margin-bottom: 0.1%;
+}
+
+.form_wrapper {
+   width: 100%;
+   position: relative;
+   max-width: 800px; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5px;
+   /* z-index: 2; */
+}
+
+.outer_box {
+   width: 100%;
+   max-width: 800px;
+   position: absolute;
+   border: 2px solid white;
+   margin-left: 25px;
+   margin-top: 1px;
+   height: 550px;
+   top: 45%;
+   left: 45%;
+   z-index: 0;
+   opacity: 0.8;
+   transform: translate(-50%, -50%);
+}
+
+.form_container {
+   width: 100%;
+   max-width: 800px;
+   position: relative;
+   background-color: rgba(29, 29, 34, 0.8);
+   padding: 40px;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+   /* z-index: 1; */
+   margin-top: 1%;
+   margin-bottom: 8%;
+   margin-left: 1%;
+   margin-right: 5%;
+   top: 25px;
+   left: 15px;
+   opacity: 100%; 
+}
+
+.form_container .row input {
+   background-color: white;
+   opacity: 100%;
+}
+
+.form_container textarea {
+   background-color: white;
+   opacity: 100%;
+}
+
+/* .form-container form {
+   display: flex;
+   flex-direction: column;
+   opacity: 100%;
+} */
+
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   opacity: 100%;
+}
+
+.row input {
+   width: 48%;
+   padding: 15px;
+   border: none;
+   height: 50px;
+   box-sizing: border-box;
+   font-size: 1.1rem;
+   font-family: Arial, sans-serif;
+}
+
+textarea {
+   width: 100%;
+   margin: 20px 0;
+   padding: 15px;
+   border: none;
+   resize: none;
+   height: 150px;
+   box-sizing: border-box;
+   font-size: 1.1rem;
+   font-family: Arial, sans-serif;
+}
+
+.checkbox_container {
+   margin: 15px 0;
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+}
+
+.checkbox_container input[type="checkbox"] {
+   margin-right: 10px;
+}
+
+.form_container .button_container {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.form_container button {
+   padding: 15px 30px;
+   background-color: white;
+   color: black;
+   border: none;
+   font-weight: bold;
+   font-size: 1.1rem;
+   cursor: pointer;
+}
+
+.form_container button:hover {
+   background-color: red;
+   color: white;
+}
+
+.successMsg {
+   color: red;
+   font-size: 1rem;
+   font-weight: 600;
+   text-align: right;
+}
+
+
+/* @media (max-width: 768px) {
+   .row {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .row input {
+       width: 100%;
+       margin-bottom: 15px;
+   }
+
+   .outer-box {
+       width: 100%;
+       height: auto; 
+       top: 0;
+       left: 0;
+   }
+
+   .form-container {
+       padding: 20px;
+   }
+
+   .form-container button {
+       width: 100%;
+       padding: 15px;
+       font-size: 1.2rem;
+   }
+} */
+
+@media (max-width: 480px) {
+   .blog_section h1 {
+       font-size: 1.8rem;
+       margin-bottom: 10px;
+   }
+   
+   .blog_section p {
+       font-size: 0.9rem;
+       line-height: 1.5;
+   }
+
+   .form_container {
+       max-width: 100%;
+       position: relative;
+       background-color: #00000000;
+       padding: 20px;
+       margin: 0 auto;  
+       top: 3%;
+       left: 3%;
+       box-shadow: none; 
+       /* z-index: 2; */
+   }
+
+    .form_wrapper {
+       margin: 0 auto;
+       width: 100%;
+   } 
+
+    .outer_box {
+       position: absolute;
+       border: 2px solid white;
+       top: 3%;
+       left: 10%;
+       width: 90%;
+       height: 98%;
+       /* z-index: 1; */
+       transform: translate(5%, 5%);
+       display: none;
+   } 
+
+   .row {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       gap: 20px;
+       flex-wrap: wrap; 
+       margin-bottom: 15px;
+   }
+   /* .row-comments {
+       height: 90%;
+   } */
+   .row input {
+       width: 100%;
+       height: 50%; 
+       padding: 10px;
+       font-size: 1rem;
+       margin-right: 10%;
+   }
+   
+   textarea {
+       width: 100%; 
+       padding: 10px;
+       font-size: 1rem;
+       margin-bottom: 10px;
+   }
+
+   .button_container {
+       display: flex;
+       justify-content: center;
+   }
+   
+   .form_container button {
+       width: 100%;
+       margin-right: 4%;
+       align-items: center;
+       padding: 10px;
+       background-color: white;
+       color: black;
+       font-weight: bold;
+       font-size: 1rem;
+       border: none;
+   }
+
+   .form_container button:hover {
+       background-color: red;
+       color: white;
+   }
+
+   .successMsg {
+      text-align: center;
+   }
+
+
+}

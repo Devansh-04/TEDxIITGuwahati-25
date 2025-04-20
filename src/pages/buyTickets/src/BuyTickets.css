@@ -1,0 +1,149 @@
+
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1a202c, #2d3748, #1a202c);
+  color: white;
+}
+
+/* Navbar styles (if needed) */
+
+/* Main content */
+.main-content {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 400%;
+  font-weight: 500;
+  color: white;
+}
+@media(max-width:839px){.hero-title{margin-bottom:-13%;}}
+@media(max-width:743px){.hero-title{margin-bottom:-17%;}}
+@media(max-width:658px){.hero-title{margin-bottom:-19%;}}
+@media(max-width:561px){.hero-title{margin-bottom:-22%;}}
+@media(max-width:480px){.hero-title{margin-bottom: -25%;}}
+@media(max-width:400px){.hero-title{margin-bottom:-43%;}}
+@media(max-width:563px){.hero-title{font-size:350%;}}
+@media(max-width:490px){.hero-title{font-size:300%;}}
+@media(max-width:428px){.hero-title{font-size:260%;}}
+@media(max-width:375px){.hero-title{font-size:240%;}}
+@media(max-width:349px){.hero-title{font-size:220%;}}
+@media(max-width:323px){.hero-title{font-size:200%;}}
+.hero-description {
+  color: #a0aec0;
+  max-width: 600px;
+  font-size:1.25rem;
+  margin: 0 auto;
+}
+@media(max-width:840px){.hero-description{
+margin-top:15%;}}
+@media(max-width:770px){.hero-description{
+  margin-top:16%;}}
+@media(max-width:742px){.hero-description{
+    margin-top:18%;}}
+@media(max-width:663px){.hero-description{
+      margin-top:21%;}}
+@media(max-width:565px){.hero-description{
+        margin-top:23%;}}
+@media(max-width:485px){.hero-description{
+          margin-bottom:-26%;
+        margin-top:37%;}}
+@media(max-width:476px){.hero-description{
+          margin-bottom:-24%;
+        margin-top:38%}}
+@media(max-width:478px){.hero-description{
+          margin-bottom:-24%;
+        margin-top:39%;}}
+@media(max-width:416px){.hero-description{
+          margin-bottom:-29%;
+        margin-top:39%;
+        font-size:110%}}
+@media(max-width:400px){.hero-description{
+          margin-bottom: -40%;
+        margin-top:46%;}}
+@media(max-width:376px){.hero-description{
+  margin-bottom:-46%;
+  margin-top:46%;
+  font-size:105%;}}
+@media(max-width:349px){.hero-description{
+            font-size:98%}}
+@media(max-width:424px){.hero-description{
+              font-size:105%}}
+@media(max-width:349px){.hero-description{
+                font-size:96%}}
+@media(max-width:349px){.hero-description{
+              font-size:90%}}
+@media(max-width:494px){.hero-description{
+                margin-bottom: -31%;
+              margin-top:25%}}
+@media(max-width:503px){.hero-description{
+                margin-bottom: -20%;
+              margin-top:25%}}
+@media(max-width:400px){.hero-description{
+                margin-bottom: -45%;
+              margin-top:45%}}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Ticket styles */
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+}
+
+.ticket-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 450px;
+}
+
+.ticket {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(6deg);
+}
+
+.student-ticket {
+  top: 0;
+  left: 0;
+  transform: rotate(-6deg);
+}
+
+.general-ticket {
+  top: 1rem;
+  left: 1rem;
+  transform: rotate(6deg);
+}
+
+.ticket:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 20;
+}
+
+/* Benefits styles */
+.benefits-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

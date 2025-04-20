@@ -1,0 +1,128 @@
+<<<<<<< HEAD
+    .heading1 {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-left: 15px;
+  }
+  
+=======
+  .heading1 {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-left: 15px;
+  }
+  @media (max-width: 500px) {
+    .heading1 {
+      text-align: center;
+    }
+  }
+  
+  
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
+  .heading2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-left: 15px;
+  }
+  
+  .gallerypanel img {
+    max-width: 100%;
+   }
+  
+  .gallery {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #fff;
+    
+    padding: 3rem 6rem;
+  }
+  
+  .gallerypanel {
+    flex: 1;
+    aspect-ratio: 1 / 1.5;
+    cursor: pointer;
+    transition: 0.4s;
+    pointer-events: auto;
+  
+    /* Not 100% compatible with all browsers */
+    /* -webkit-box-reflect: below 4px
+      linear-gradient(transparent, rgba(0, 0, 0, 0.15)); */
+  
+    /* background-color: red; */
+  }
+  
+  .gallerypanel img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1.75;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  
+  
+  
+  .button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .galleryname{
+    text-align: center;
+  }
+
+  
+
+@media (max-width:500px){
+  .gallery{
+    display: block;
+    padding: 4rem;
+  }
+  .gallerypanel {
+    aspect-ratio: 1 / 1.2;
+    padding: 0px 0px 20px ;
+  }
+  .gallerypanel img {
+    aspect-ratio: 1 / 1.2;
+  }
+  
+}
+@media(min-width:1000px){
+  .heading2{
+    margin-block-end: 2rem;
+    padding-left: 3%;
+  }
+  .heading1{
+    padding-left:3%;
+  }
+  .gallery{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    padding: 3rem 3rem;
+  }
+
+  .gallerypanel:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .gallery:hover > :not(:hover) {
+    margin-inline: -1.5rem;
+    transform: perspective(400px) rotateY(30deg) scale(0.8);
+  }
+  
+  .gallerypanel:hover ~ .gallerypanel {
+    transform: perspective(400px) rotateY(-30deg) scale(0.8);
+  }
+  .gallerypanel:hover .galleryname{
+    transform: scale(1.2);
+  }
+
+  .gallery:hover > :not(:hover) .galleryname{
+    display: none;
+  }
+  
+}

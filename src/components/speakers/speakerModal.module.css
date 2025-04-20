@@ -1,0 +1,144 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+    
+.modalcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #07071d;
+    padding: 14px 28px;
+    border-radius: 3px;
+    width: 70%;
+    max-height: 60%;
+    overflow: auto;
+}
+
+.closemodal {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    color: white;
+    background-color: transparent;
+    scale: 1.2;
+    cursor: pointer;
+}
+.closemodal:hover{
+    color: red;
+}
+.name {
+    font-size: 2.5em;
+}
+.speaker{
+    padding-top:15px;
+}
+.speakercontent{
+    float:left;
+    width: 250px;
+}
+.speakercontent img{
+    width: 100%;
+    padding-right: 20px;
+}
+.speakercontent h2{
+<<<<<<< HEAD
+    font-size: 1.4em;
+    max-width: 30%;
+    /* text-align: center; */
+    transform: translateX(100px);
+}
+.speaker p{
+    padding: 10px;
+    font-size: 1.1em;
+=======
+    font-size: 1em;
+    /* max-width: 30%; */
+    /* text-align: center; */
+    /* transform: translateX(100px); */
+    padding: 2% 0 0 10%;
+}
+.speaker p{
+    padding: 10px;
+    font-size: 1em;
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
+    margin-top: 15px;
+}
+
+@media (min-width: 400px) and (max-width:600px) {
+    .modalcontent{
+        width: 95%;
+        max-height: 80%;
+    }
+    .speakercontent{
+        float: none;
+    }
+    .speakercontent img{
+        transform: translateX(9vw);
+    }
+    .speakercontent h2{
+<<<<<<< HEAD
+        transform: translateX(28vw);
+=======
+        transform: translateX(10vw);
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
+        padding-top: 5px;
+    }
+    .speaker p{
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 400px) {
+    .modalcontent{
+        width: 95%;
+        max-height: 80%;
+    }
+    .speakercontent{
+        float: none;
+    }
+    .speakercontent img{
+<<<<<<< HEAD
+        transform: translateX(2vw);
+    }
+    .speakercontent h2{
+        transform: translateX(28vw);
+=======
+        transform: translateX(8vw);
+    }
+    .speakercontent h2{
+        transform: translateX(6vw);
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
+        padding-top: 5px;
+    }
+    .speaker p{
+        transform: translateY(-10px);
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px) {
+    .modalcontent{
+        width: 90%;
+        max-height: 80%;
+    }
+}

@@ -1,0 +1,32 @@
+.preloader {
+    position: fixed; /* Ensures the preloader covers the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black background or any color of choice */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* High z-index to overlay other elements */
+}
+#pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0); /* Optional semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.preloader-gif {
+    max-width: 100%; /* Adjust size if needed */
+    max-height: 100%;
+}
+
+
+

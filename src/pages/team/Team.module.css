@@ -1,0 +1,755 @@
+.icon {
+    color: #0A66C2;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0077b5;
+    transform: scale(1.2);
+}
+
+.Teamidmobile .icon:hover {
+    color: #0077b5;
+}
+
+
+.Teamdesktopdetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+
+.Teamiddesktop {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    max-width: 100%;
+}
+
+
+.Teamiddesktop:hover {
+    transform: scale(1.05);
+}
+
+
+.Teamiddesktop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.625rem;
+}
+
+
+.imgTitleName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+
+.imgTitlePost {
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.Teamiddesktop .imgTitleName p,
+.Teammobile .imgTitleName p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-left: 0;
+}
+
+/* Targeting the paragraph inside .imgTitlePost (for position) */
+.Teamiddesktop .imgTitlePost p,
+.Teammobile .imgTitlePost p {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 0;
+}
+
+/* Responsive Design: Desktop Layout (768px to 970px) */
+@media (min-width: 768px) and (max-width: 970px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 21.875rem;
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+    }
+
+   .Teamdesktop h1{
+       transform: translate(8%);
+   }
+}
+
+/* Media Query for screen size between 970px and 1100px */
+@media (min-width: 970px) and (max-width: 1100px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+        margin-left: 0.5rem;
+    }
+}
+
+/* General styling for overall team section */
+.Team {
+    background-color: black;
+    color: red;
+}
+
+/* Styling for headings in desktop */
+.Teamdesktop h1 {
+    color: red;
+    max-width: 95%;
+    transform: translateX(5%);
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.Teamdesktop h4 {
+    max-width: 95%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(209, 175, 175);
+    margin-left: 4.5rem;
+}
+
+.Teamdesktop p {
+    max-width: 100%;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.92);
+    text-align: left;
+    margin-left: 4.5rem;
+}
+.Teamdesktop h4+p {
+    width:90%;
+}
+/* Styling for the mobile view of team section */
+.Teammobile h1 {
+    max-width: 95%;
+    transform: translateX(5%);
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.Teammobile h4 {
+    max-width: 95%;
+    transform: translateX(6%);
+    font-weight: 500;
+    color: rgb(209, 175, 175);
+}
+
+.Teammobile p {
+    transform: translateX(6%);
+    max-width: 80%;
+    font-weight: 150;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Mobile team card style */
+.Teamidmobile {
+    width: 40%;
+    padding: 1.25rem;
+    margin: 0.625rem 6.25rem 1.25rem 6.25rem;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.9375rem;
+    color: black;
+}
+
+.Teamidmobile img {
+    width: 100%;
+}
+
+/* Styling for the icon section */
+.icon {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+}
+
+.icondiv {
+    visibility: hidden;
+}
+
+.linkedin:hover div {
+    visibility: visible;
+}
+
+
+.imageCircle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(175, 46, 46);
+    position: relative;
+    z-index: 100;
+}
+
+.imageCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 101;
+}
+
+.imageCircle img:hover {
+    transform: scale(1.2);
+}
+
+
+.imageCircle::before {
+    content: "";
+    width: 17rem;
+    height: 8.5rem;
+    background-color: rgb(158, 15, 15);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: center bottom;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.imageCircle:hover::before {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
+    .Teammobile h1,
+    .Teammobile h4,
+    .Teammobile p {
+        text-align: left;
+        transform: translateX(0%);
+        margin-left: 0;
+        width: 90%;
+       
+    }
+    
+    .Teammobile .Teamidmobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem;
+        margin: 0.625rem 0;
+        text-align: center;
+    }
+
+    .Teammobile .Teamidmobile img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+        margin-bottom: 0.625rem;
+    }
+
+    .Teammobile .imgTitleName,
+    .Teammobile .imgTitlePost {
+        width: 100%;
+        text-align: center;
+        margin-left: 20%;
+        margin-bottom: 0.5rem;
+    }
+
+    .Teammobile .imgTitleName p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+
+    .Teammobile .imgTitlePost p {
+        font-weight: 300;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        margin: 0;
+    }
+    .Teammobile h1,.Teammobile h4,.Teammobile h4+p{
+        margin-left:10% ;
+        font-weight: 100;
+    }
+    .Teammobile h4+p{
+        margin-top: 1%;
+    }
+}
+@media (min-width: 771px) and (max-width: 970px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 21.875rem;
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+    }
+
+    .Teamdesktop h1 {
+        font-size: 2.5rem;
+        transform: translateX(0%);
+    }
+
+    .Teamdesktop h4 {
+        font-size: 1.2rem;
+        margin-left: 0;
+        font-weight: 100;
+    }
+
+    .Teamdesktop p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .Teamidmobile {
+        width: 45%;
+        margin: 1rem;
+        padding: 1.25rem;
+        text-align: center;
+        align-items: center;
+        border-radius: 0.9375rem;
+        color: black;
+    }
+
+    .Teamidmobile img {
+        width: 80%;
+        margin-bottom: 0.625rem;
+    }
+
+    .icon {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 30%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .imageCircle {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .imageCircle img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imageCircle img:hover {
+        transform: scale(1.1);
+    }
+
+    .Teammobile h1 {
+        font-size: 2.3rem;
+        transform: translateX(5%);
+    }
+
+    .Teammobile h4 {
+        font-size: 1.2rem;
+        transform: translateX(5%);
+        
+    }
+
+    .Teammobile p {
+        font-size: 1rem;
+        transform: translateX(5%);
+    }
+    .Teamdesktop h1,.Teamdesktop h4{
+        transform: translate(6%);
+    }
+    .Teamdesktop h4+p{
+        transform: translate(6.5%);
+        margin-top: 1%;
+    }
+}
+@media (min-width: 971px) and (max-width: 1100px) {
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+        margin-left: 0.5rem;
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 21.875rem;
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+    }
+
+    .Teamdesktop h1 {
+        transform: translate(0%);
+    }
+
+    .Teamdesktop h4 {
+        font-size: 1.2rem;
+        margin-left: 0;
+        font-weight:100;
+    }
+
+    .Teamdesktop p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .Teamidmobile {
+        width: 45%;
+        margin: 1rem;
+        padding: 1.25rem;
+        text-align: center;
+        align-items: center;
+        border-radius: 0.9375rem;
+        color: black;
+    }
+
+    .Teamidmobile img {
+        width: 80%;
+        margin-bottom: 0.625rem;
+    }
+
+    .icon {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 30%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .imageCircle {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .imageCircle img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imageCircle img:hover {
+        transform: scale(1.1);
+    }
+
+    .Teammobile h1 {
+        font-size: 2.3rem;
+        transform: translateX(5%);
+    }
+
+    .Teammobile h4 {
+        font-weight: 100;
+        transform: translateX(5%);
+    }
+
+    .Teammobile p {
+        font-size: 1rem;
+        transform: translateX(5%);
+    }
+    .Teamdesktop h1,.Teamdesktop h4{
+        transform: translate(6%);
+    }
+    .Teamdesktop h4+p{
+        transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
+    }
+}
+@media (min-width: 1100px) {
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-left: 0;
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .Teamdesktop h1 {
+        font-size: 3.5rem;
+        transform: translateX(0);
+    }
+
+    .Teamdesktop h4 {
+        font-weight: 100;
+        margin-left: 0;
+    }
+
+    .Teamdesktop p {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .Teamdesktop h4+p{
+        font-weight: 100;
+        margin-top: 0.8%;
+    }
+    .Teamidmobile {
+        width: 40%;
+        margin: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+        align-items: center;
+        border-radius: 1rem;
+        color: black;
+    }
+
+    .Teamidmobile img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 30%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .imageCircle {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+        background-color: rgb(175, 46, 46); /* Red circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+    }
+
+    .imageCircle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        position: relative;
+        z-index: 101;
+    }
+
+    .imageCircle img:hover {
+        transform: scale(1.1);
+    }
+
+    
+    .imageCircle::before {
+        content: "";
+        width: 20rem;
+        height: 10rem;
+        background-color: rgb(158, 15, 15); 
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        transform-origin: center bottom;
+        transition: transform 0.3s ease;
+        z-index: 5;
+    }
+
+    .imageCircle:hover::before {
+        transform: rotate(180deg);
+    }
+
+    .Teammobile h1 {
+        font-size: 2.8rem;
+        transform: translateX(0);
+    }
+
+    .Teammobile h4 {
+        font-size: 1.3rem;
+        transform: translateX(0);
+        font-weight: 100;
+    }
+
+    .Teammobile p {
+        font-size: 1.1rem;
+        transform: translateX(0);
+    }
+    
+    .Teamdesktop h1, .Teamdesktop h4 {
+        transform: translate(6%);
+    }
+    .Teamdesktop h4 + p {
+        transform: translate(6.5%);
+        font-weight: 100;
+    }
+}
+@media (min-width: 481px) and (max-width: 770px) {
+    .Teamdesktopdetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 21.875rem;
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+    }
+
+    .Teamdesktop h1 {
+        font-size: 2.5rem;
+        transform: translateX(5%);
+    }
+
+    .Teamdesktop h4 {
+        font-size: 1.3rem;
+        margin-left: 0%;
+        font-weight: 380;
+    }
+
+    .Teamdesktop h4 + p {
+        transform: translate(6.5%);
+        font-weight: 320;
+       
+    }
+
+    .Teamdesktop p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .Teamidmobile {
+        width: 45%;
+        margin: 1rem;
+        padding: 1.25rem;
+        text-align: center;
+        align-items: center;
+        border-radius: 0.9375rem;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #000000; 
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); 
+        margin-left: 26%;
+    }
+
+    .Teamidmobile img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 0 rgba(0,0,0,0.2); */
+        margin-bottom: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgTitleName, .imgTitlePost {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imgTitleName p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+        text-align: center;
+        margin: 0;
+    }
+
+    .imgTitlePost p {
+        font-weight: 300;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.8); 
+        text-align: center;
+        margin: 0;
+    }
+
+    .Teammobile h1 {
+        font-size: 2.3rem;
+        transform: translateX(5%);
+    }
+
+    .Teammobile h4 {
+        font-size: 1.2rem;
+        transform: translateX(5%);
+        font-weight: 100;
+    }
+
+    .Teammobile p {
+        font-size: 1rem;
+        transform: translateX(5%);
+    }
+    .Teammobile h4+p{
+        transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
+}
+
+    .Teamdesktop h1,
+    .Teamdesktop h4
+    {
+        transform: translate(6%);
+    }
+    .Teamdesktop h4 + p{
+        transform: translate(6.4%);
+    }
+}

@@ -1,0 +1,135 @@
+.star-border-container {
+<<<<<<< HEAD
+  display: inline-flex; /* Use inline-flex to keep the element inline and allow centering */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  padding: 0px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 7rem; /* Reduced width from 8rem to 6rem */
+  height: 2.5rem; /* Adjusted height */
+}
+
+.border-gradient-bottom {
+  position: absolute;
+  width: 250%; /* Reduced from 300% */
+  height: 50%; /* Height remains the same for this border */
+  opacity: 0.7;
+  bottom: -8px; /* Adjusted position for the smaller size */
+  right: -200%;
+  border-radius: 50%;
+  animation: star-movement-bottom linear infinite alternate;
+  z-index: 0;
+}
+
+.border-gradient-top {
+  position: absolute;
+  opacity: 0.7;
+  width: 250%; /* Reduced from 300% */
+  height: 50%;
+  top: -8px; /* Adjusted position for the smaller size */
+  left: -200%;
+  border-radius: 50%;
+  animation: star-movement-top linear infinite alternate;
+  z-index: 0;
+}
+
+.inner-content {
+  position: relative;
+  background-color: red;
+  color: white;
+  font-size: 18px; /* Reduced font size from 14px */
+  text-align: center; /* Ensures text is centered horizontally */
+  align-items: center;
+  padding: 14px 11px; /* Reduced padding */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@keyframes star-movement-bottom {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+  }
+}
+
+@keyframes star-movement-top {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 0%);
+    opacity: 0;
+  }
+}
+=======
+    display: inline-flex; /* Use inline-flex to keep the element inline and allow centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 0px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 7rem; /* Reduced width from 8rem to 6rem */
+    height: 2.5rem; /* Adjusted height */
+  }
+  .border-gradient-bottom {
+    position: absolute;
+    width: 250%; /* Reduced from 300% */
+    height: 50%; /* Height remains the same for this border */
+    opacity: 0.7;
+    bottom: -8px; /* Adjusted position for the smaller size */
+    right: -200%;
+    border-radius: 50%;
+    animation: star-movement-bottom linear infinite alternate;
+    z-index: 0;
+  }
+  .border-gradient-top {
+    position: absolute;
+    opacity: 0.7;
+    width: 250%; /* Reduced from 300% */
+    height: 50%;
+    top: -8px; /* Adjusted position for the smaller size */
+    left: -200%;
+    border-radius: 50%;
+    animation: star-movement-top linear infinite alternate;
+    z-index: 0;
+  }
+  .inner-content {
+    position: relative;
+    background-color: red;
+    color: white;
+    font-size: 18px; /* Reduced font size from 14px */
+    text-align: center; /* Ensures text is centered horizontally */
+    align-items: center;
+    padding: 14px 11px; /* Reduced padding */
+    border-radius: 20px;
+    z-index: 1;
+  }
+  @keyframes star-movement-bottom {
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-100%, 0%);
+      opacity: 0;
+    }
+  }
+  @keyframes star-movement-top {
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(100%, 0%);
+      opacity: 0;
+    }
+  }
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67

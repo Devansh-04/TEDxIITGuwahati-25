@@ -1,0 +1,30 @@
+.scroll-container {
+    display: flex;
+    overflow: hidden; /* Hide content outside the container */
+    white-space: nowrap;
+    padding: 20px 0;
+    scale: 1.5;
+    margin-inline: 25%;
+}
+
+.scroll-container .scroll-content {
+    display: flex;
+    animation: scroll 25s linear infinite; /* Animation for auto-scroll */
+}
+
+.scroll-container img {
+    width: 150px;
+    height: 150px; /* Adjust image height */
+    margin: 0 15px;
+    border-radius: 50%; 
+    flex-shrink: 0;/* Make the images circular */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll to the left */
+    }
+}

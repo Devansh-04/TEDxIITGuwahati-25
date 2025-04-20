@@ -1,0 +1,148 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+.navbardesktop{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    background-color: black;
+
+    margin-right: auto;
+    font-size: 1.2em;
+    
+    
+}
+.img img{
+    width: 250px;
+    padding: 10px 20px 10px 20px;
+}
+.navbardesktop .div1{
+    margin-left: auto;
+    padding-left: 30px;
+    transform: translateY(-3px);
+    padding-right: 1.33%;
+}
+.navbardesktop .div2{
+    padding: 0px 1.33% 0px 2.66%;
+    transform: translateY(-3px);
+}
+.navbardesktop .div3{
+    padding: 0px 1.33% 0px 2.66%;
+    transform: translateY(-3px);
+}
+.navbardesktop .div4{
+    padding: 0px 1.33% 0px 2.66%;
+    transform: translateY(-3px);
+}
+.navbardesktop .div5{
+    padding: 0px 1.33% 0px 2.66%;
+    transform: translateY(-3px);
+}
+.navbardesktop .div6{
+    padding: 0px 1.33% 0px 2.66%;
+    transform: translateY(-3px);
+}
+.navbardesktop .div7{
+    padding: 0px 1.33% 0px 2.66%;
+    margin-right: auto;
+}
+.navbardesktop a{
+    text-decoration: none;
+    color: white;
+}
+/* .navbardesktop a:hover{
+    color: red;
+} */
+.div7 img{
+    max-width: 20px;
+}
+.booknow{
+    background-color: red;
+    border-radius: 20px;
+    padding: 6px 15px 9px 18px ;
+   
+    min-width: 90px;
+}
+.booknow:hover{
+    color: white;
+}
+
+
+.navbarmobileopen {
+    width: 200px;
+    height: 100vh;
+    position: fixed; /* Or absolute depending on your layout */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1001; /* Above the main navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.navbarmobileopen .div div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    
+    
+    
+    border-radius: 5px; /* Optional rounded corners */
+}
+.navbarmobileopen .div1{
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.navbarmobileopen .div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block; /* Make the link fill the div */
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
+    line-height: 1; /* Fix vertical alignment issues*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarmobileopen .div a:hover {
+    color: red;
+    background-color: rgba(56, 59, 60, 0.851);
+    font-size: 1.3em;
+}
+
+.navtop img{
+    width: 200px;
+    display: block;
+    position: fixed;
+    top: 3px;
+    right: 15px;
+
+   
+}
+.frustation{
+    width: 100%;
+    height: 45px;
+    background-color: black;
+}
+.menubutton{
+    position: fixed;
+    margin-left: 3%;
+    top: 10px;
+    left: 10px;
+    scale: 1.5;
+    cursor: pointer;
+    z-index: 2000;
+}
+.menubutton:hover{
+    scale: 1.8;
+}

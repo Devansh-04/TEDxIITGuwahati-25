@@ -1,0 +1,72 @@
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 7fr 1.5fr;
+    width: 100%;
+    align-items: center;
+    margin-left: 0 auto;
+}
+.about_container{
+    background-color: rgba(113, 112, 112, 0.3);
+    border-radius: 20px;
+}
+.button-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 2%;
+}
+.tab-button{
+    background: none;     
+    border: none;
+    color: inherit; 
+    font: inherit; 
+    font-size: 120%;
+    padding: 2%; 
+    margin: 0; 
+    cursor: pointer;
+    width: 100%;
+}
+.tab-button:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+.tab-button.active {   
+    color: rgb(184, 39, 39);
+}
+.tab-button.active:hover {   
+    text-shadow:none;
+}
+.box{
+    padding: 0 10% 5% 10%;
+    margin-top: 2%;
+}
+@media screen and (max-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px 0px;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .container{
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 375px) {
+    
+    
+    .button-container{
+        gap: 5%;
+    } 
+    .container{
+        padding-left: 15%;
+    }
+    .tab-button{
+        font-size: 110%;
+    }
+    .about_container{
+        width: 105%;
+    }
+    
+    
+}

@@ -1,0 +1,147 @@
+.parallax_container {
+    position: relative; 
+    background-color: #000000; 
+    overflow: hidden; 
+    padding: 0; 
+    height: 100vh;
+    margin: 0;
+}
+
+.seaside {
+    display: block; 
+    position: fixed;
+    margin: 0 auto; 
+    text-align: center; 
+    top: 33vh;
+    transform: translateX(0);
+    transition: transform 0.1s ease-out;
+}
+.citadel {
+    display: block; 
+    position: fixed;
+    margin: 0 auto; 
+    text-align: center; 
+    top: 47vh;
+    transform: translateX(0); 
+    transition: transform 0.1s ease-out; 
+}
+
+.seaside img,
+.citadel img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    /* margin: 0 auto;  */
+}
+
+.seaside img{
+    margin-left: 24%;
+    margin-bottom: 2%;
+}
+
+.citadel img{
+    margin-left: 39.5%;
+    /* margin-top: 2px; */
+}
+
+
+.popup_image_container {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%) scale(0.5); /* Start small */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.1s linear, transform 0.1s linear; /* Smooth transitions */
+}
+
+.popup_image_container img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    .seaside img,
+    .citadel img {
+        max-width: 60%;
+        height: auto;
+        display: block;
+    }
+    .seaside img{
+        margin-left: 18%;
+        margin-bottom: 2%;
+    }
+    
+    .citadel img{
+        margin-left: 35.5%;
+        /* margin-top: 2px; */
+    }
+}
+
+.transition_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.transition_logo {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.transition_text {
+    margin-left: 20px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.content {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Scrolling Content */
+.content img,
+.content p {
+    position: relative;
+    transform: none;
+    opacity: 1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .seaside img,
+    .citadel img {
+        height: 120px;
+    }
+
+    .popup_image_container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .transition_logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .transition_text {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 20px;
+        font-size: 16px;
+    }
+}

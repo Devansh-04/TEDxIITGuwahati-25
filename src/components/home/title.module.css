@@ -1,0 +1,215 @@
+.title{
+    /* height: 170vh; */
+}
+.parallax_container{
+    position: relative; 
+    background-color: #000000; 
+    overflow: hidden; 
+    padding: 0; 
+    height: 70vh;
+    margin: 0;
+}
+.seaside {
+    display: block; 
+    position: fixed;
+    margin: 0 auto; 
+    text-align: center; 
+    top: 35.5vh;
+    width: 100%;
+}
+.citadel {
+    display: block; 
+    position: fixed;
+    margin: 0 auto; 
+    text-align: center; 
+    top: 49.5vh;
+    width: 100%;
+}
+
+.seaside img,
+.citadel img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+}
+
+.seaside img{
+    margin-left: 26%;
+    margin-bottom: 2%;
+}
+
+.citadel img{
+    margin-left: 39.5%;
+    
+}
+
+.heading{
+    text-align: center;
+}
+.heading img{
+    width: 45%;
+}
+
+.container{
+    display: block;
+}
+.container img{
+    margin-top: 3%;
+    width: 45vw;
+}
+.container .content{
+    margin: 5% 8% 0 2%;
+}
+.content h2{
+    font-size: 300%;
+    margin-bottom: 5%;
+    color: red;
+    font-weight: normal;
+}
+
+@media (max-width: 650px){
+    .container img{
+        width: 100vw;
+    }
+    .container .content{
+        margin:0 5% 0 5%;
+    }
+    .content h2{
+        font-size: 150%;
+    }
+    .title{
+        /* height: 245vh; */
+    }
+    .seaside img,
+.citadel img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.seaside img{
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.citadel img{
+    margin-left: 32%;
+}
+.seaside{
+    top: 40%;
+}
+.citadel{
+    top: 50%;
+}
+}
+@media (max-width: 800px) and (min-width:650px){
+    .seaside{
+        top: 32.5vh;
+    }
+    .container img{
+        width: 70vw;
+        margin-left: 15%;
+    }
+    .container .content{
+        margin:0 5% 0 5%;
+    }
+    .content h2{
+        font-size: 200%;
+    }
+    .title{
+        /* height: 225vh; */
+    }
+    .seaside img,
+.citadel img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.seaside img{
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.citadel img{
+    margin-left: 32%;
+}
+/* .heading img{
+    width: 70%;
+} */
+}
+@media (max-width: 1000px) and (min-width:800px){
+    .seaside{
+        top: 32.5vh;
+    }
+    .container img{
+        width: 70vw;
+        margin-left: 15%;
+    }
+    .container .content{
+        margin:0 5% 0 5%;
+    }
+    .content h2{
+        font-size: 200%;
+    }
+    .title{
+        /* height: 242vh; */
+    }
+    .seaside img,
+.citadel img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.seaside img{
+    margin-left: 9%;
+    margin-bottom: 2%;
+}
+
+.citadel img{
+    margin-left: 32%;
+}
+/* .heading img{
+    width: 70%;
+} */
+}
+@media (min-width:1001px) and (max-width:1150px) {
+    .container{
+        display: flex;
+    }
+    /* .heading{
+        transform: translateY(60px);
+    } */
+    .container img{
+        margin-top: 17%;
+    }
+}
+@media (min-width:1150px){
+    .container{
+        display: flex;
+    }
+    /* .heading{
+        transform: translateY(60px);
+    } */
+     .title{
+        /* height:160vh; */
+     }
+}
+
+.content .button{
+    text-align:center ;
+    font-size: 1.2em;
+    margin-top:13px;
+    font-weight: 600;
+    margin-left: -2px;
+    background-color: rgb(255, 0, 0);
+    border-radius:15px;
+    padding:10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 130px;
+}
+.content .button:hover{
+    background-color: rgb(255, 80, 80);
+}

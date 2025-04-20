@@ -1,0 +1,36 @@
+.merch-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.merch-item{
+  margin-top: 10%;
+  margin-inline: 8%;
+  
+}
+.merch-image{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  scale: 2;
+}
+.title-info{
+  margin-top: 10%;
+  margin-bottom: -5%;
+  color:white;
+}
+.button-merch{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top:5%;
+  scale:1.2;
+  background-color: #dc2626;
+  width:fit-content;
+  margin-left:41%;
+  padding: 1%;
+  border-radius: 20px;
+  cursor: pointer;
+}
